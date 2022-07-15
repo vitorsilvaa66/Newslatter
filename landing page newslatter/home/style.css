@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@200;600 & display=swap'); /* Importação de fontes */
+
+body {
+    background-image: url(background\ black\ and\ white.jpg);
+    color: white;
+    background-size: cover;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {        /* Começo do Menu Hambúrguer */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    width: 25px;
+    margin: 15px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 15px;
+    background: white;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+
+label span:nth-child(2) {
+    top: 8px;
+}
+
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox-menu {
+    display: none;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {        /* Fim do Menu Hambúrguer */
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 15px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.marketing {
+    color: rgb(132,14,201);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.login {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 70px;
+}
+
+input {
+    margin-top: 20px;
+    height: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"] {
+    background-color: rgb(132,14,201);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    background-color: white;
+    color: rgb(132,14,201);
+    transition: 0.8s all;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#inicialL {
+    color: rgb(132,14,201);
+    font-weight: bolder;
+    font-size: larger;
+    border: 2px solid white;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#inicialM {
+    color: rgb(132,14,201);
+    font-weight: 600;
+    font-size: larger;
+    border: 2px solid white;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#btn-e {
+    width: 100px;
+    height: 50px;
+    font-size: medium;
+    margin-top: 30px;
+}

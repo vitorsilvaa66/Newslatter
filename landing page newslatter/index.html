@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Landing Page</title>  <!--Título da página-->
+  </head>
+  <body>
+    <header> <!--Tag semântica do HTML para cabeçalho-->
+      <div id="title"> <!--Eu usei esse identificador "title" para estilizar a div completa-->
+        <h1 class="marketing"><strong id="inicialM">M</strong>arketing</h1> <!--Título h1 do site e class para poder estilizar apenas o primeiro h1-->
+        <h1>Creativo</h1> <!--Segundo h1 do site-->
+      </div>
+
+      <ul> <!--A ul é uma tag pai para definir uma lista desordenada-->
+        <a href="a"><li>Início</li></a> 
+        <a href="a"><li>Serviços</li></a> <!--A tag li é uma tag filho para identificar cada item da lista-->
+        <a href="a"><li>Sobre</li></a>
+        <a href="a"><li>Contatos</li></a>
+        <a href="home/form.html" target="_self" id="inscreva-se-btn"><li>Já tem uma conta?</li></a> <!--Id para estilizar apenas o último li-->
+      </ul>
+    </header>
+
+    <main>  <!--Conteúdo principal do site-->
+      <aside>
+        <h2><span>Inscreva-se agora</span></h2> <!--Usei o elemento <span> para estilizar apenas o primeiro h2-->
+        <h2>na Newslatter</h2>
+        <p>
+          Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica
+          e de impressão. Lorem Ipsum tem sido o texto fictício padrão da
+          indústria desde os anos 1500.
+        </p>
+        <form> <!--<Form> é uma tag semântica para formulários-->
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+          <input type="submit" id="btn-cadastro" value="Cadastrar" />
+        </form>
+      </aside>
+
+      <article>
+        <img
+          src="components/images/77d0a7c454e658833800528e748edbe9.png"
+          alt="Mulher-Roxa"
+        />
+      </article>
+    </main>
+  </body>
+</html>
